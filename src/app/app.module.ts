@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+// feature modules
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
+
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -12,7 +17,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CoreModule,
+    SharedModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

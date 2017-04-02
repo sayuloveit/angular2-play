@@ -8,12 +8,12 @@ import {
     OnDestroy
 } from '@angular/core';
 
-import { AlignHeightService } from '../services/align-height.service';
+import { AlignHeightService } from '../../services/align-height.service';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/filter';
 
 @Directive({
-    selector: '[alignHeight]'
+    selector: '[appAlignHeight]'
 })
 export class AlignHeightDirective implements OnInit, OnChanges, OnDestroy {
 
