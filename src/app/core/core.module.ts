@@ -1,11 +1,18 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// modules
+import { CoreRoutingModule } from './core-routing.module';
+
+import { HomeComponent } from './home/home.component';
+
+
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    CoreRoutingModule
   ],
-  declarations: []
+  declarations: [HomeComponent]
 })
 export class CoreModule {
   constructor( @Optional() @SkipSelf() parentModule: CoreModule) {

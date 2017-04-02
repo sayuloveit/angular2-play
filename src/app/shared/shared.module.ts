@@ -12,7 +12,7 @@ import { AlignHeightDirective } from './directives/align-height/align-height.dir
     CommonModule
   ],
   declarations: [
-    AlignHeightService
+    AlignHeightDirective
   ],
   exports: [
     AlignHeightDirective
