@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { CoreRoutingModule } from './core-routing.module';
 
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -12,7 +13,13 @@ import { HomeComponent } from './home/home.component';
     CommonModule,
     CoreRoutingModule
   ],
-  declarations: [HomeComponent]
+  declarations: [
+    HomeComponent,
+    HeaderComponent
+  ],
+  exports: [
+    HeaderComponent
+  ]
 })
 export class CoreModule {
   constructor( @Optional() @SkipSelf() parentModule: CoreModule) {
